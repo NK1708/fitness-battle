@@ -1,0 +1,371 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+*:focus
+	outline: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #B4B4B4
+body input:required:valid,
+body textarea:required:valid
+	color: #B4B4B4
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.5
+	font-family: intro
+	opacity: 1
+	color: #fff
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	height: 100%
+
+
+.third-block
+	background-image: url(../img/fon2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 0%
+	text-align: center
+	height: 100%
+	width: 100%
+	padding-top: 13%
+	position: relative
+.third-content
+	text-align: center
+	font-family: century
+	font-weight: 100
+	z-index: 2
+	.col-sm-12
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		background-color: #FF0000
+		text-transform: uppercase
+		font-size: 35px
+		margin-bottom: 9%
+		padding: 0 10px
+	&__logo
+		width: 450px
+		margin-bottom: 8%
+	&__select
+		display: flex
+		justify-content: center
+	&__save
+		color: #fff
+		font-size: 10px
+		text-transform: uppercase
+		font-weight: bold
+		letter-spacing: 1px
+		img
+			height: 17px
+			margin-top: 2px
+			margin-left: 6px
+	&__save:focus, &__save:active, &__save:hover
+		color: #fff
+		text-decoration: none
+	&__items
+		text-align: center
+		margin-top: 20px
+		select
+		    color: #fff
+		select option
+			color: #fff
+		select option.nms
+			color: red
+		.select2-container
+			width: auto!important
+			display: block
+			margin: 0 auto
+			margin-bottom: 5px
+		.select2-container:last-of-type
+			width: auto!important
+		.select2-selection--single
+			border-radius: 0
+			background-color: transparent
+			border: none
+		.select2-container--default
+			.select2-selection--single
+				.select2-selection__arrow
+					background-image: url(../img/arrow.png)
+					height: 26px
+					width: 15px
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					b
+						display: none
+				.select2-selection__rendered
+					text-align: left
+					padding-right: 15px
+					color: #fff
+	.select2-results__option[aria-selected]
+		text-align: left
+	.main-input
+    	display: block
+    	margin: 0 auto
+    	margin-bottom: 20px
+    	text-align: center
+    	font-size: 21px
+	.main-input.name
+		width: 400px
+		background-color: transparent
+		border: none
+		border-bottom: 2px solid #FF0000
+	input[type="phone"]
+		color: #fff
+		background-color: transparent
+		border: none
+	.book_button
+		margin: 20px 0
+.select2-search
+	display: none!important
+.select2-container--open
+	.select2-dropdown
+		border: none
+	.select2-dropdown--below
+		width: 250px!important
+		border-radius: 0
+		max-height: 135px
+		overflow-y: scroll
+		top: -2px
+		color: #969696
+		font-weight: 100
+		font-family: century
+		font-size: 14px
+.select2-container--default
+	.select2-results>.select2-results__options
+		max-height: 600px
+	.select2-results__option--highlighted[aria-selected]
+		background-color: #fff
+		color: #F70002
+	.select2-results__option[aria-selected=true]
+		background-color: #fff
+
+.select2-container--default
+	.select2-results__option[aria-disabled=true]:first-child
+		display: none
+
+.book_button
+	background-color: #fff
+	border-radius: 50px
+	text-transform: uppercase
+	font-weight: bold
+	border: 3px solid #FF0000
+	padding: 3px 40px
+	white-space: normal
+	width: 267px
+	line-height: normal
+	letter-spacing: 1px
+	color: #FF0000
+
+
+.dark
+	position: absolute
+	height: 100%
+	width: 100%
+	background-color: black
+	top: 0
+	left: 0
+	opacity: 0.3
+	z-index: 1
+
+
+
+
+.form_message
+	font-size: 20px
+.error
+	border-bottom: 1px solid red!important
+
+.red
+	color: #FF0000
+
+.rubl
+	font-family: ptsans
+	font-weight: bold
+	color: #888888
+	font-size: 100px
+
+h1, h2, h3, h4
+	font-weight: 100
+
+.canvas-layer
+	display: none
+
+.year
+	position: relative
+.year:after
+	content: "*"
+	color: #fff
+	font-size: 20px
+	font-family: arial
+	position: absolute
+	top: 0
+	right: -13px
+
+#msg_pop
+	background-color: #fff
+	display: none
+	position: fixed
+	z-index: 99999
+	bottom: 0
+	left: 0
+	width: 100%
+	line-height: 14px
+	padding: 10px 15%
+	color: black
+	font-size: 11px
+	font-family: century
+	text-align: center
+.msg_close
+	position: absolute
+	right: 13px
+	top: 11px
+	width: 32px
+	height: 32px
+	cursor: pointer
+.msg_close:before, .msg_close:after 
+	position: absolute
+	left: 15px
+	content: ' '
+	height: 26px
+	width: 3px
+	background-color: #333
+.msg_close:before
+	transform: rotate(45deg)
+.msg_close:after
+	transform: rotate(-45deg)
+.fadeIn
+	animation-name: fadeIn
+	-webkit-animation-name: fadeIn
+	animation-duration: 0.4s;
+	-webkit-animation-duration: 0.4s
+	animation-timing-function: ease-in-out 
+	-webkit-animation-timing-function: ease-in-out     
+	visibility: visible !important
+  
+@keyframes fadeIn
+    0%
+    	transform: scale(0.7)
+    	opacity: 0.5
+    80%
+    	transform: scale(1.1)     
+    100%
+    	transform: scale(1)
+    	opacity: 1
+  
+@-webkit-keyframes fadeIn
+	0%
+		-webkit-transform: scale(0.7)
+		opacity: 0.5
+	80%
+		-webkit-transform: scale(1.1)      
+	100%
+		-webkit-transform: scale(1)
+		opacity: 1 
+
+.ps__thumb-y
+	background-color: red
+	right: -2px
+
+.ps__rail-x, .ps__rail-y
+	opacity: 0.6
+	right: 5px
+	background-color: #fff!important
+	width: 2px
+
+.century
+	font-family: ptsans
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #fff
+	display: flex
+	flex-direction: column
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.center
+	margin: 0 auto
+
+.form-red-text
+	color: #db0000
+	font-size: 20px
+	font-weight: bold
+
+.btn-dark
+	display: none
+	font-family: intro
+	background-color: #000
+	text-transform: uppercase
+	border: none
+	color: #fff
+	-webkit-border-radius: 50px
+	border-radius: 50px
+	padding: 10px 80px
+	&:hover
+		text-decoration: none
+		color: #fff
+
+.modal
+	display: none
+	background: #fff
+	position: fixed
+	top: 250px
+	right: 50%
+	left: 50%
+	transform: translate(-50%, 0)
+	padding: 10px
+	width: 100%
+	max-width: 575px
+	z-index: 10000
+	h2
+		padding-top: 100px
+		text-align: center
+	p
+		font-family: century
+		text-align: center
+	&.active
+		display: block
+	.modal-close
+		background-image: url(../img/closeicon.jpg)
+		background-repeat: no-repeat
+		border-radius: 50%
+		width: 60px
+		height: 60px
+		float: right
+		cursor: pointer
+
+@import "media" // Всегда в конце
